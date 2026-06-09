@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Showdown</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f9; padding-top: 50px; }
+        .container { background: white; padding: 30px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        button { font-size: 18px; padding: 10px 20px; margin: 10px; cursor: pointer; border: none; border-radius: 5px; color: white; }
+        .cats { background-color: #3498db; }
+        .dogs { background-color: #e74c3c; }
+        .results { margin-top: 20px; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cats vs Dogs Live Voting</h1>
+        <form method="POST">
+            <button type="submit" name="vote" value="Cats" class="cats">Vote Cats 🐱</button>
+            <button type="submit" name="vote" value="Dogs" class="dogs">Vote Dogs 🐶</button>
+        </form>
+        <div class="results">
+            <h3>Current Standings:</h3>
+            <p>🐱 Cats: <strong>{{ votes.get('Cats', 0) }}</strong></p>
+            <p>🐶 Dogs: <strong>{{ votes.get('Dogs', 0) }}</strong></p>
+        </div>
+    </div>
+</body>
+</html>
