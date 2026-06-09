@@ -6,8 +6,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: 80
+      targetPort: 8081
       protocol: TCP
       name: http
   selector:
-    app: voting-app
+    app: my-voting-app
