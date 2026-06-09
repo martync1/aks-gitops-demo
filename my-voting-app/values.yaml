@@ -1,10 +1,6 @@
 replicaCount: 1
 
 image:
-  repository: martync1234/real-voting-app
-  tag: v1.0.0
+  repository: martync1234/my-voting-app
+  tag: "v2.0"
   pullPolicy: IfNotPresent
-
-service:
-  type: ClusterIP
-  port: 80
