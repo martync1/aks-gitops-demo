@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: martync1234/my-voting-app
-  tag: "v3.0"
+  tag: "v4.0"
   pullPolicy: IfNotPresent
 
 service:
