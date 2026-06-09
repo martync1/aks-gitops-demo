@@ -4,4 +4,7 @@ image:
   repository: martync1234/my-voting-app
   tag: "v2.0"
   pullPolicy: IfNotPresent
-# Force sync comment
+
+service:
+  type: ClusterIP
+  port: 8081
