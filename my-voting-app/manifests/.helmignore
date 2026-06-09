@@ -1,0 +1,2 @@
+# Ignore the frontend HTML template from Helm parsing
+templates/index.html
