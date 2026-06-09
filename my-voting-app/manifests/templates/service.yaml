@@ -10,4 +10,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: my-voting-app
+    app: voting-app
